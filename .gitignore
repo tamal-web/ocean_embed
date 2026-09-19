@@ -1,0 +1,68 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.conda/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- Data (large / regenerable — never commit raw or processed data) ---
+data/raw/
+data/interim/
+data/processed/
+*.nc
+*.netcdf
+*.zarr/
+*.grib
+*.grib2
+*.hdf5
+*.h5
+
+# --- Model artifacts / experiment outputs ---
+outputs/checkpoints/
+outputs/predictions/
+experiments/*/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+wandb/
+mlruns/
+lightning_logs/
+
+# --- Figures (keep code, not generated images, unless you want final figs versioned) ---
+outputs/figures/*.png
+outputs/figures/*.pdf
+!outputs/figures/.gitkeep
+
+# --- Config secrets / credentials ---
+.env
+*.env
+configs/secrets.yaml
+**/credentials.json
+.copernicusmarine-credentials
+.netrc
+
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Logs ---
+*.log
+logs/
